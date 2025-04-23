@@ -6,11 +6,38 @@
     <title>Formularios</title>
 </head>
 <body>
-<form action="">
+<!-- <form action="">
     <label for="Nombre">
         <span>Cual es tu nombre?</span>
-        <input type="text" id="Nombre" />
+        <input type="text" id="Nombre" placeholder="Tu nombre"/>
     </label>
+    <label for="inicio-platzi">
+        <span>Cuando comenzaste en Platzi?</span>
+        <input type="date" id="inicio-platzi" placeholder="fecha de inicio">
+    </label>
+    <label for="horario">
+        <span>En que horario estudias?</span>
+        <input type="time" id="horario" placeholder="Hora de inicio">
+    </label>
+</form> -->
+<form action="">
+    <label for="nombre">
+        <span>Cual es tu nombre?</span>
+        <input type="text" name="nombre" id="nombre" autocomplete="name" required/>
+    </label>
+    <label for="correo">
+        <span>Cual es tu correo?</span>
+        <input type="email" name="correo" id="correo" autocomplete="email" required/>
+    </label>
+    <label for="pais">
+        <span>En que pais vives?</span>
+        <input type="text" name="pais" id="pais" autocomplete="country" required/>
+    </label>
+    <label for="zip-code">
+        <span>Cual es tu codigo postal?</span>
+        <input type="text" name="zip-code" id="zip-code" autocomplete="postal-code" required/>
+    </label>
+    <input type="submit">
 </form>
 </body>
 </html>
