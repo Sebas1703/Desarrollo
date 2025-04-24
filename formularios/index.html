@@ -20,7 +20,7 @@
         <input type="time" id="horario" placeholder="Hora de inicio">
     </label>
 </form> -->
-<form action="">
+<!-- <form action="">
     <label for="nombre">
         <span>Cual es tu nombre?</span>
         <input type="text" name="nombre" id="nombre" autocomplete="name" required/>
@@ -37,7 +37,61 @@
         <span>Cual es tu codigo postal?</span>
         <input type="text" name="zip-code" id="zip-code" autocomplete="postal-code" required/>
     </label>
-    <input type="submit">
+    <input type="submit"> -->
+    <section>
+        <form action="#" method="POST"> 
+            <div>
+                <label for="nombre">
+                    <span>Cual es tu nombre?</span>
+                    <input type="text" name="nombre" id="nombre" autocomplete="name" placeholder="Escribe tu nombre">
+                </label>
+            </div>
+            <div>
+                <label for="correo">
+                    <span>Cual es tu email?</span>
+                    <input type="email" name="correo" id="correo" autocomplete="email" placeholder="Escribe tu email" required>
+                </label>
+            </div>
+            <div>
+                <label for="password">
+                    <span>Cual es tu contraseña?</span>
+                    <input type="password" name="password" id="password" autocomplete="password" placeholder="Escribe tu contraseña" required>
+                </label>
+            </div>
+            <div>
+                <label for="edad">
+                    <span>Cual es tu edad?</span>
+                    <input type="number" name="edad" id="edad" min="1" max="120" placeholder="Escribe tu contraseña" required>
+                </label>
+            </div>
+            <div>
+                <label for="birthday">
+                    <span>Cual es tu fecha de nacimiento?</span>
+                    <input type="date" name="birthday" id="birthday" required>
+                </label>
+            </div>
+            <div>
+                <label for="color">
+                    <span>Cual es tu color favorito?</span>
+                    <input type="color" name="color" id="color" required>   
+                </label>
+            </div>
+            <div>
+                <label for="url">
+                    <span>Cual es tu LinkedIn?</span>
+                    <input type="url" name="url" id="url" required>
+                </label>
+            </div>
+            <div>
+                <label for="horario">
+                    <span>Cual es tu hora preferida para ser contactado?</span>
+                    <input type="time" name="horario" id="horario">
+                </label>
+            </div>
+            <button type="submit">Enviar</button>
+
+        </form>
+    </section>
 </form>
 </body>
 </html>
