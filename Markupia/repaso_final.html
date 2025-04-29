@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario Rápido de Afiliación a Markupia</h1>
+    </header>
+    <main>
+        <section>
+            <div class="form-wrapper">
+                <form action="#" method="post" class="form-reclutamiento">
+                    <fieldset class="fieldset-datos-personales">
+                        <legend>Datos personales</legend>
+
+                        <div class="form-group">
+                            <span>Introduzca su nombre: </span>
+                            <input type="text" name="Nombre" id="Nombre" 
+                            class="input-text" aria-label="Nombre completo" 
+                            placeholder="Nombre" minlength="3" maxlength="50" aria-describedby="instruccion-nombre" required autocomplete="name">
+                            <p id="instruccion-nombre" hidden>Por favor, ingresa tu nombre completo</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Email">
+                            <span>Introduzca su email: </span>
+                            <input type="email" name="Email" id="Email" class="input-email" placeholder="Email" autocomplete="email" required>
+                            </label>
+                        </div>   
+
+                        <div class="form-group">
+                            <label for="password">
+                                <span>Introduzca su contraseña: </span>
+                                <input type="password" id="password" class="input-password" minlength="8" maxlength="20" pattern="[A-Za-z0-9]{8,20}" required>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="edad">
+                                <span>Indique su edad: </span>
+                                <input type="number" name="edad" id="edad" class="input-number" min="18" max="120" step="1" required>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ciudad">
+                                <span>Ciudad de origen: </span>
+                                <input type="text" name="ciudad" id="ciudad" class="input-text" value="Markupia" readonly>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Color">
+                            <span>Elija el color de su insignia: </span>
+                            <input type="color" name="Color" id="Color" class="input-color" required>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="fieldset-preferencias">
+                        <legend>Asignaciones y Preferencias</legend>
+
+                        <div class="form-group">
+                            <label for="Ciudad">
+                                <span>Elija su ciudad de entrenamientos: </span>
+                                <select name="Ciudad" id="Ciudad" class="input-select" required>
+                                    <optgroup label="Zona Norte">
+                                        <option value="Metropolis" selected>Metropolis</option>
+                                        <option value="Ciudad Capital">Ciudad Capital</option>
+                                    </optgroup>
+                                    <optgroup label="Zona Sur">
+                                        <option value="Smallville">Smallville</option>
+                                        <option value="Gotham">Gotham</option>
+                                    </optgroup>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div class="form-group form-options">
+                            <span>¿A qué unidad de combate perteneces?</span> 
+                            <input type="radio" id="Sigilo" name="Combate" value="Sigilo" class="input-radio" checked>
+                            <label for="Sigilo">Sigilo</label>
+                            <input type="radio" name="Combate" id="Asalto" value="Asalto" class="input-radio">
+                            <label for="Asalto">Asalto</label>
+                            <input type="radio" name="Combate" id="Comando" value="Comando" class="input-radio">
+                            <label for="Comando">Comando</label>
+                        </div>
+
+                        <div class="form-group form-options">    
+                            <span>¿Qué armas dominas?</span>
+                            <input type="checkbox" name="Arma[]" id="Espada" value="Espada" class="input-checkbox" checked>
+                            <label for="Espada">Espada</label>
+                            <input type="checkbox" name="Arma[]" id="Lanza" value="Lanza" class="input-checkbox" checked>
+                            <label for="Lanza">Lanza</label>
+                            <input type="checkbox" name="Arma[]" id="Arco" value="Arco" class="input-checkbox">
+                            <label for="Arco">Arco</label>
+                            <input type="checkbox" name="Arma[]" id="Daga" value="Daga" class="input-checkbox">
+                            <label for="Daga">Daga</label>
+                        </div>    
+
+                        <div class="form-group">
+                            <label for="nivel-poder">
+                                <span>Nivel de poder: </span>
+                                <input type="number" name="nivel-poder" id="nivel-poder" class="input-number" step="100" min="1" max="10000" required>
+                            </label>
+                        </div>
+                    </fieldset>    
+
+                    <fieldset class="fieldset-datos-ocultos">
+                        <legend>Datos ocultos y controlados</legend>
+
+                        <div class="form-group">
+                            <input type="hidden" name="token" id="code" value="M4RKUP14X">
+                        </div> 
+
+                        <div class="form-group">
+                            <label for="estado-mision">
+                                <span>Estado de misión: </span>
+                                <input type="text" name="estado-mision" id="estado-mision" class="input-text" value="En entrenamiento" readonly required>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="promo">
+                                <span>Promoción especial: </span>
+                                <input type="text" name="promo" id="promo" class="input-text" value="No disponible" disabled required>
+                            </label>
+                        </div>
+
+                    </fieldset>
+
+                    <button type="submit" class="button-primary">Enviar</button>
+
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

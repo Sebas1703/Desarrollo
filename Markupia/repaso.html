@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario Rápido de Afiliación a Markupia</h1>
+    </header>
+    <main>
+        <section>
+            <div>
+                <form action="#" method="post" class="form-reclutamiento">
+                    <fieldset class="fieldset-datos-personales">
+                        <legend>Datos personales</legend>
+                        <div>
+                            <span>Introduzca su nombre: </span>
+                            <input type="text" name="Nombre" id="Nombre" aria-label="Nombre completo" 
+                            placeholder="Nombre" minlength="3" maxlength="50" aria-describedby="instruccion-nombre" required autocomplete="name">
+                            <p id="instruccion-nombre" hidden>Por favor, ingresa tu nombre completo</p>
+                        </div>
+                        <div>
+                            <label for="Email">
+                            <span>Introduzca su email: </span>
+                            <input type="Email" name="Email" id="Email" placeholder="Email" \ autocomplete="email" required>
+                            </label>
+                        </div>   
+                        <div>
+                            <label for="password">
+                                <span>Introduzca su contraseña: </span>
+                                <input type="password" id="password" minlength="8" maxlength="20" pattern="[A-Za-z0-9]{8,20}">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="edad">
+                                <span>Indique su edad: </span>
+                                <input type="number" name="edad" id="edad" min="18" max="120" step="1">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="ciudad">
+                                <span>Ciudad de origen: </span>
+                                <input type="text" name="ciudad" id="ciudad" value="Markupia" readonly>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="Color">
+                            <span>Elija el color de su insignia: </span>
+                            <input type="Color" name="Color" id="Color" required>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset-preferencias">
+                        <legend>Asignaciones y Preferencias</legend>
+                        <div>
+                            <label for="Ciudad">
+                                <span>Elija su ciudad de entrenamientos: </span>
+                                <select name="Ciudad" id="Ciudad" required>
+                                    <optgroup label="Zona Norte">
+                                        <option value="Metropolis" selected>Metropolis</option>
+                                        <option value="Ciudad Capital">Ciudad Capital</option>
+                                    </optgroup>
+                                    <optgroup label="Zona Sur">
+                                        <option value="Smallville">Smallville</option>
+                                        <option value="Gotham">Gotham</option>
+                                    </optgroup>
+                                </select>
+                            </label>
+                        </div>
+                        <div>
+                            <Span>A qué unidad de combate perteneces?</Span> 
+                            <input type="radio" id="Sigilo" name="Combate" value="Sigilo" checked>
+                            <label for="Sigilo">Sigilo</label>
+                            <input type="radio" name="Combate" id="Asalto" value="Asalto">
+                            <label for="Asalto">Asalto</label>
+                            <input type="radio" name="Combate" id="Comando" value="Comando">
+                            <label for="Comando">Comando</label>
+                        </div>
+                        <div>    
+                            <span>Que arma dominas?</span>
+                            <input type="checkbox" name="Arma[]" id="Espada" value="Espada" checked>
+                            <label for="Espada">Espada</label>
+                            <input type="checkbox" name="Arma[]" id="Lanza" value="Lanza" checked>
+                            <label for="Lanza">Lanza</label>
+                            <input type="checkbox" name="Arma[]" id="Arco" value="Arco">
+                            <label for="Arco">Arco</label>
+                            <input type="checkbox" name="Arma[]" id="Daga" value="Daga">
+                            <label for="Daga">Daga</label>
+                        </div>    
+                        <div>
+                            <span>Nivel de poder: </span>
+                            <label for="nivel-poder">
+                                <input type="number" name="nivel-poder" id="nivel-poder" step="100" required>
+                            </label>
+                        </div>
+                    </fieldset>    
+                    <fieldset class="fieldset-datos-ocultos">
+                            <legend>Datos ocultos y controlados</legend>
+                            <div>
+                                <label for="code">
+                                <input type="hidden" name="code" id="code" name="token" value="M4RKUP14X">
+                                </label>
+                            </div> 
+                            <div>
+                                <label for="estado-mision">
+                                    <span>Estado de mision: </span>
+                                    <input type="text" name="estado-mision" id="estado-mision" value="En entrenamiento" readonly required>
+                                </label>
+                            </div>
+                            <div>
+                                <label for="promo">
+                                    <span>Promocion especial: </span>
+                                    <input type="text" name="promo" id="promo" value="No disponible" disabled required>
+                                </label>
+                            </div>
+                    </fieldset>
+                    <button type="submit" class="button-primary">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
