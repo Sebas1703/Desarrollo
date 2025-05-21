@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peluquería Elegante</title>
+    <meta name="description" content="Peluquería con estilo y atención personalizada. Cortes, color, manicure, pedicure y más. Reserva tu cita online.">
+    <meta name="author" content="Sebastián Pérez">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="logo">Carolina Roa</h1>
+            <nav>
+                <ul class="nav-menu" class="nav">
+                    <li class="dropdown">
+                        <button class="dropbtn">Servicios</button>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Cortes</a></li>
+                            <li><a href="#">Cepillados</a></li>
+                            <li><a href="#">Manicura</a></li>
+                            <li><a href="#">Pedicura</a></li>
+                            <li><a href="#">Color y tratamientos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Transformamos tu look con elegancia</h2>
+            <p>Estilo, técnica y atención personalizada en cada detalle</p>
+            <a href="#contacto" class="cta-button">Reserva tu cita</a>
+        </div>
+    </section>
+
+    <section id="servicios" class="container">
+        <h2>Servicios</h2>
+        <ul class="servicios-lista">
+            <li>Cortes</li>
+            <li>Cepillados</li>
+            <li>Manicura</li>
+            <li>Pedicura</li>
+            <li>Color y tratamientos</li>
+        </ul>
+    </section>
+
+    <section id="galeria" class="container">
+        <h2>Trabajos Recientes</h2>
+        <div class="carousel">
+            <img src="./pictures/cliente1.jpg" alt="Cliente feliz 1">
+            <img src="./pictures/cliente2.jpg" alt="Cliente feliz 2">
+            <img src="./pictures/cliente3.jpg" alt="Cliente feliz 3">
+        </div>
+    </section>
+
+    <section id="nosotros" class="container">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una peluquería familiar con años de experiencia, donde combinamos tradición y vanguardia. Cada cliente es único y merece lo mejor de nosotros.</p>
+    </section>
+
+    <section id="contacto" class="container">
+        <h2>Contacto</h2>
+        <form aria-label="Formulario de contacto">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit" class="cta-button">Enviar</button>
+        </form>
+
+        <h3>Agenda tu cita</h3>
+        <input type="date" name="fecha-cita" aria-label="Selecciona una fecha para tu cita">
+
+        <h3>¿Dónde estamos?</h3>
+        <iframe src="https://maps.google.com/?q=Peluqueria&output=embed" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-label="Mapa de ubicación"></iframe>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Peluquería Elegante | Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
+</html>

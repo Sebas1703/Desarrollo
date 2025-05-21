@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
+.dropdown {
+    font-family: 'Courier New', Courier, monospace;
+    color: #f7b9ed;
+    list-style-type: none;
+    color: aliceblue;
+    max-width: 75%;
+    margin-top: 1.5rem;
+}
+
+.nav-content {
+    list-style-type: none;
+    display: flex;
+    text-align: auto;
+    justify-content: center;
+    gap: 1rem;
+    color: aliceblue;
+    padding: 1rem;
+}
+
+a.season:hover {
+    color: aliceblue;
+    background-color: rgb(255, 172, 71);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a.season {
+    color: aliceblue;
+    text-decoration: none;
+    transition: all 0.3 ease;
+}
+
+body {
+    height: 100%;
+    background: linear-gradient(to bottom right, #f7b9ed, rgba(58, 1, 58, 0.6));
+}
+
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 2rem;
+    background-color: rgb(0, 0, 0);
+}
+
+div {
+    height: auto;
+    width: auto;
+    max-width: 50%;
+    text-align: center;
+    background-color: black;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    margin: 2rem auto;
+    transition: transform 0.5s ease;
+
+}
+
+div:hover {
+    transform: translateY(-10px);
+}
+
+.imagen {
+    width: 25rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.product {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(223, 133, 133);
+    padding-top: 1rem;
+}
+
+.paragraph {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(223, 133, 133);
+}
+
+.order {
+    border-radius: 2rem;
+    color: aliceblue;
+    background-color: rgba(248, 201, 248, 0.6);
+    border: none;
+    width: 5rem;
+    padding: 0.75rem 1 rem;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 1rem;
+}   
+
+.order:hover {
+    transition: all 0.3 ease;
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: tomato;
+    color: black;
+}

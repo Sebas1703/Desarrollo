@@ -1,0 +1,222 @@
+/* Menu desplegable*/
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background: none;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    color: #111;
+    min-width: none;
+    border-radius: 4px;
+    list-style-type: none;
+}
+
+.dropdown-content li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.dropdown-content li a:hover {
+    background-color: #000000;
+}
+/*Mostrar al hacer hover*/
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+
+/* Header */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-menu li a {
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Tipografía especial para títulos */
+h1, h2, h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+/* Hero */
+#hero {
+    background: linear-gradient(to right, #ffb400, #ff6f00);
+    color: #fff;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #111;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+/* Servicios */
+#servicios h2,
+#galeria h2,
+#nosotros h2,
+#contacto h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #ff6f00;
+}
+
+.servicios-lista {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.servicios-lista li {
+    background-color: #ffe7b3;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Galería */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.carousel img {
+    max-height: 200px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+/* Nosotros */
+#nosotros p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Contacto */
+form {
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+}
+
+button[type="submit"] {
+    background-color: #ff6f00;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 0.75rem;
+    border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+    background-color: #e85d00;
+}
+
+/* Calendario */
+input[type="date"] {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .carousel img {
+        max-width: 90%;
+        height: auto;
+    }
+}
